@@ -18,9 +18,7 @@ def add_user(user, password, pwdb):
 def authenticate(user, password, pwdb):
     if user in pwdb:
         if password == pwdb[user]:
-            print('Successfully authenticated!')
-        else:
-            print('Wrong password!!')
+            print('The username does not exist or the password is wrong!!')
     else:
         answer = input('Add user to the db? ')
         if answer == 'y':
